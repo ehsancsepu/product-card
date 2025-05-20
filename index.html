@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Product Cards Design</h1>
+            <div class="controls">
+                <div class="view-toggle">
+                    <button class="active" id="grid-view"><i class="fas fa-th"></i> Grid</button>
+                    <button id="list-view"><i class="fas fa-list"></i> List</button>
+                </div>
+                <div class="filter-sort">
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Clothing">Clothing</option>
+                        <option value="Home">Home</option>
+                        <option value="Beauty">Beauty</option>
+                        <option value="Sports">Sports</option>
+                    </select>
+                    <select id="sort-by">
+                        <option value="default">Sort by</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="rating">Rating</option>
+                        <option value="name">Name</option>
+                    </select>
+                    <input type="text" id="search" class="search-input" placeholder="Search products...">
+                </div>
+            </div>
+        </header>
+
+        <div class="products-grid" id="products-container">
+            <!-- Products will be inserted here by JavaScript -->
+        </div>
+
+        <div class="pagination" id="pagination">
+            <!-- Pagination will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
